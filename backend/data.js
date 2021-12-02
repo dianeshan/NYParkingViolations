@@ -27,6 +27,8 @@ for (let i = 1; i < FILES_TO_LOAD + 1; i++) {
     JSONDATA = contents;
   }
 }
+// This should cause our tests to fail!!!
+JSONDATA = [];
 
 process.on('SIGINT', () => {
   console.log('Got kill signal. Backing up all data...');
