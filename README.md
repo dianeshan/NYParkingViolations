@@ -27,14 +27,14 @@ JDJHE - An application for searching, querying, and analyzing NY parking violati
     - `mv ~/Downloads/archive.zip .` (Could be different based on where the dataset was downloaded)
 3. Unzip the dataset. You should have `parking-violations-issued-fiscal-year-XXX.csv` in the current directory.
     - `unzip archive.zip`
-4. Run the data preparser. This will put JSON files in the `parsed_data` directory we created earlier.
+4. Run the data preparser. This will put JSON files in the `parsed_data` directory we created earlier (Don't worry, it will take a while).
     - `python3 ../functions/main.py`
 5. Go back to the base backend directory.
     - `cd ..` (from the `datasets` directory)
 6. Install the necessary packages needed to run the backend.
     - `npm install`
 7. Start the backend.
-    - `npm run`
+    - `npm run start`
 
 ### Starting the fontend
 1. Open a new terminal and go into the frontend directory from the project base.
@@ -42,7 +42,7 @@ JDJHE - An application for searching, querying, and analyzing NY parking violati
 2. Install the necessary packages needed to run the frontend.
     - `npm install`
 3. Start the frontend. If your browser doesn't automatically open, you can access the frontend at `http://localhost:3000`.
-    - `npm run`
+    - `npm run start`
 
 ### Languages
 - HTML/CSS
